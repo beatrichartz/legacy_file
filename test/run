@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+TEST_DIR=$(dirname "$0")
+
+mix test $TEST_DIR
