@@ -1,12 +1,12 @@
 # LegacyFile
 
-###You have:
+#### You have:
 Files separated by CR (carriage return_), LF (line feed), or CRLF?
 
-###You want:
+#### You want:
 To read them all in and expose a stream of lines regardless.
 
-###Wait! Doesn't Elixir / Erlang support this out of the box?
+#### Wait! Doesn't Elixir / Erlang support this out of the box?
 No. [File.Stream](https://github.com/elixir-lang/elixir/blob/v1.4.4/lib/elixir/lib/file/stream.ex#L85) uses
 [IO.each__stream](https://github.com/elixir-lang/elixir/blob/v1.4.4/lib/elixir/lib/io.ex#L502) which uses
 [:io.get_line](http://erlang.org/documentation/doc-5.3/lib/stdlib-1.12/doc/html/io.html#get_line%2). LF and CRLF are
